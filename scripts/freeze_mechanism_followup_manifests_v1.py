@@ -145,6 +145,7 @@ def main():
     for mode in ("e1", "d1b"):
         config_path = ROOT / "configs" / f"mechanism_gate_{mode}_v1.json"
         config = json.loads(config_path.read_text(encoding="utf-8"))
+        v21 = json.loads((ROOT / config["base_experiment_config"]).read_text(encoding="utf-8"))
         input_files = inputs_for(config, mode)
         for relative in input_files:
             verify_anchor_contains(relative)
@@ -217,7 +218,6 @@ def main():
             }
         else:
             manifest["presentation_schema_sha256"] = canonical_hash(list(selective.PRESENTATION_KEYS))
-            v21 = json.loads((ROOT / config["base_experiment_config"]).read_text(encoding="utf-8"))
             manifest["expected_write_content_sha256"] = sha256_bytes(v21["remote_summary"].encode("utf-8"))
             manifest["d1_prior_summary_sha256"] = sha256_file(ROOT / "logs/mechanism_gate_d1_v1_summary.json")
             manifest["d1_raw_log_sha256"] = sha256_file(ROOT / "logs/mechanism_gate_d1_v1_20261008T103459Z.jsonl")
