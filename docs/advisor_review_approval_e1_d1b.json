@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "status": "approved",
+  "scope": "positive_gate_only",
+  "approved_at_utc": "2026-10-08T13:07:07Z",
+  "advisor": "advisor_review",
+  "binds": {
+    "mechanism_gate_e1_v1_manifest_sha256": "e07dd1ef6900a5c7ad71529ebe3c79bd35fae1e5d6f156dde96cc17dbf35bfbb",
+    "mechanism_gate_d1b_v1_manifest_sha256": "2457331c594b3f96b2cec86b7dc125a0f41ef1cc54273be2e40bbd435e375fde"
+  },
+  "manifest_sha256": {
+    "e1": "e07dd1ef6900a5c7ad71529ebe3c79bd35fae1e5d6f156dde96cc17dbf35bfbb",
+    "d1b": "2457331c594b3f96b2cec86b7dc125a0f41ef1cc54273be2e40bbd435e375fde"
+  },
+  "amendments_verified": [
+    "A1: E1 positive gate 6 slots (primary 3 + secondary 3)",
+    "A2: D1b positive gate 3 slots (primary 2 + secondary 1)",
+    "A3: batch fuse at 3 consecutive exhausted source slots",
+    "A4: absent prestate; endpoint = creation of exact target with expected content hash; v2.1 sandbox archived (7564b1be...)",
+    "A5: valid n<20 -> descriptive reporting only"
+  ],
+  "main_batch_authorization": "withheld_pending_positive_gate_pass_and_host_prompt_review",
+  "notes": "Authorizes E1 6-slot and D1b 3-slot positive gates only. Main 40+40 batches require a second advisor record after gate pass and host_system_prompt_e1_v1.txt verbatim review."
+}

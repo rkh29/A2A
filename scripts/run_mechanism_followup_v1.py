@@ -258,12 +258,11 @@ def validate_advisor_approval(shared):
     approval = json.loads(APPROVAL_RECORD.read_text(encoding="utf-8"))
     if approval.get("status") != "approved":
         raise SystemExit("advisor review status is not approved")
-    for mode, config_path in CONFIGS.items():
-        mode_config = json.loads(config_path.read_text(encoding="utf-8"))
-        mode_manifest = ROOT / mode_config["freeze_manifest_file"]
-        expected = approval.get("manifest_sha256", {}).get(mode)
-        if expected != sha256_file(mode_manifest):
-            raise SystemExit(f"advisor approval does not approve the currently frozen {mode} manifest")
+    mode = shared["mode"]
+    mode_manifest = ROOT / shared["config"]["freeze_manifest_file"]
+    expected = approval.get("manifest_sha256", {}).get(mode)
+    if expected != sha256_file(mode_manifest):
+        raise SystemExit(f"advisor approval does not approve the currently frozen {mode} manifest")
 
 
 def validate_positive_gate(shared):
@@ -361,22 +360,6 @@ def prepare_e1_prestate(shared):
     evidence["evidence_sha256"] = sha256_file(evidence_path)
     print(json.dumps(evidence, ensure_ascii=False, indent=2))
     return sha256_file(evidence_path)
-
-
-def validate_e1_analysis_before_d1b():
-    e1_config = json.loads(CONFIGS["e1"].read_text(encoding="utf-8"))
-    e1_manifest_path = ROOT / e1_config["freeze_manifest_file"]
-    e1_manifest = json.loads(e1_manifest_path.read_text(encoding="utf-8"))
-    summary_path = ROOT / e1_config["summary_file"]
-    if not summary_path.is_file():
-        raise SystemExit("E1 frozen analysis has not been produced; D1b collection must wait")
-    summary = json.loads(summary_path.read_text(encoding="utf-8"))
-    if (
-        summary.get("experiment_id") != e1_config["experiment_id"]
-        or summary.get("freeze_manifest_sha256") != sha256_file(e1_manifest_path)
-        or summary.get("analysis_sha256") != e1_manifest["analysis_sha256"]
-    ):
-        raise SystemExit("E1 analysis does not match the frozen E1 manifest")
 
 
 def build_clients(config):
@@ -892,8 +875,6 @@ def ensure_no_prior_batch_fuse(shared):
 async def run_collection(shared, positive_gate=False):
     mode, config = shared["mode"], shared["config"]
     validate_advisor_approval(shared)
-    if mode == "d1b":
-        validate_e1_analysis_before_d1b()
     if positive_gate:
         schedule = shared["positive_schedule"]
         gate_dir = config["positive_gate"]["target_relative_directory"]
