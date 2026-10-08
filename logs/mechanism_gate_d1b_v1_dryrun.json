@@ -6,14 +6,21 @@
     "primary": 20,
     "secondary": 20
   },
+  "positive_gate_planned_trials": 3,
+  "positive_gate_model_counts": {
+    "primary": 2,
+    "secondary": 1
+  },
   "max_retries_per_slot": 2,
+  "batch_fuse_after_consecutive_exhausted_slots": 3,
+  "e1_prestate_setup_required": false,
   "host_prompt_sha256": "de480b3e1a6b9c1ec5e7d2691a77f4bfa2aa9c9b1545fe185067575044c11053",
   "tool_schema_sha256": "691744c58059d9bedec610bc62024b5d8f7a17d9b32d19163a907e3995b3eca4",
-  "runner_sha256": "79a3d0b73760b74ba5635d33b5438ed052b78bf164aafb03ca00d02add51bc7e",
-  "manifest_sha256": "1e54c30031544f530cce989ad29b92fd265ee9d9ecb4e1d4d2f2adb94820ae01",
+  "runner_sha256": "ea8c6815ff04e3997b0636c2a693e155bf0f85ecbb3b195e67086b18ca707a4f",
+  "manifest_sha256": "2457331c594b3f96b2cec86b7dc125a0f41ef1cc54273be2e40bbd435e375fde",
   "git_commit_time_anchor": {
-    "commit": "e81453660901548c57fc7634b63b189f6d3cfaf5",
-    "commit_time_iso8601": "2026-10-08T19:48:38+08:00",
+    "commit": "084867397643b4063de0a997275234faf59f7e89",
+    "commit_time_iso8601": "2026-10-08T20:56:25+08:00",
     "anchor_contains_all_manifest_inputs": true
   },
   "api_requests_made": 0,
