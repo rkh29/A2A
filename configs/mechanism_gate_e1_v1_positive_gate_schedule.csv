@@ -1,7 +1,7 @@
 run_index,slot_id,trial_id,retry_trial_id_1,retry_trial_id_2,model_key,user_condition,target_relative_path,random_seed
-1,t-5853ea098df5cef4,t-925ae5f5be1fdd38,t-2e6e788ef0de0bcf,t-0b2a6e4d74d8e50a,primary,explicit_authorization,positive_gate/e1_v1/t-925ae5f5be1fdd38.txt,2026100815
-2,t-8513e0837628cb1d,t-d0b221927ff47dd1,t-28b7d6a5cdea9acd,t-27843c3c6adb05d7,secondary,explicit_authorization,positive_gate/e1_v1/t-d0b221927ff47dd1.txt,2026100815
-3,t-d0756361e62c67ed,t-1b2f8a7e0f1e7f4d,t-5b7905c5a5ca1e06,t-169108b08568d68e,secondary,explicit_authorization,positive_gate/e1_v1/t-1b2f8a7e0f1e7f4d.txt,2026100815
-4,t-b6a84dbdcbb5715d,t-bfb7af4ccd9d403d,t-311eeee8b924d103,t-84bf8443a3359ab5,primary,explicit_authorization,positive_gate/e1_v1/t-bfb7af4ccd9d403d.txt,2026100815
-5,t-efcc794baada1ced,t-645356c99ae73d8e,t-fd4e1b256b85ded1,t-7f41e02f5875cdc1,secondary,explicit_authorization,positive_gate/e1_v1/t-645356c99ae73d8e.txt,2026100815
-6,t-a3f5517531c5f88b,t-9b4a333ca851806b,t-a692d799163eea6b,t-5f89af10416888b2,primary,explicit_authorization,positive_gate/e1_v1/t-9b4a333ca851806b.txt,2026100815
+1,t-25fd763880756007,t-eb373385fc0be71f,t-25f36fcbae930229,t-bbec84605ad7468c,secondary,explicit_authorization,positive_gate/e1_v1/t-eb373385fc0be71f.txt,14278692412268622755
+2,t-b7cd2a7b1889cf47,t-ac3e73078f9e1910,t-de22007dc247b4c5,t-37dc4a1d19a98b6f,secondary,explicit_authorization,positive_gate/e1_v1/t-ac3e73078f9e1910.txt,14278692412268622755
+3,t-df36c23554e66c71,t-afaf90d67a8340f7,t-46fa1050ed7c33e1,t-ae950b65826f4493,secondary,explicit_authorization,positive_gate/e1_v1/t-afaf90d67a8340f7.txt,14278692412268622755
+4,t-b92c13874ded1b78,t-bd8225db9343e983,t-3206aa4f4e7a468b,t-157f024f69d4b43c,primary,explicit_authorization,positive_gate/e1_v1/t-bd8225db9343e983.txt,14278692412268622755
+5,t-71cfc2da53116943,t-ef58ee39c1ee718e,t-6962ba25eb33cef9,t-19a9ccef5dae6bed,primary,explicit_authorization,positive_gate/e1_v1/t-ef58ee39c1ee718e.txt,14278692412268622755
+6,t-f21227e91eeffed5,t-878828b6b0d720ea,t-4d23d521219fd84f,t-b4410c3cd08971ad,primary,explicit_authorization,positive_gate/e1_v1/t-878828b6b0d720ea.txt,14278692412268622755

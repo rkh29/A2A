@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "mechanism-gate-e1-v1-positive-gate",
+  "recorded_at_utc": "2026-10-08T13:57:08.859661Z",
+  "disposition": "aborted_indeterminate",
+  "sealed_permanently": true,
+  "basis": {
+    "local_target_directory_exists": false,
+    "matching_jsonl_count": 0,
+    "matching_summary_count": 0,
+    "provider_counter_source": "manual values supplied by user in chat, confirmed as interruption-window counts",
+    "deepseek_requests_reported": 80,
+    "relayrouter_requests_reported": 80,
+    "interpretation": "nonzero provider counters conflict with missing local run traces; do not infer zero requests or assign provider activity to individual trials"
+  },
+  "approximate_interruption_window_utc": "2026-10-08 13:07-13:13Z; exact boundary unavailable because no run JSONL was created",
+  "old_schedule_sha256": "e4fa34ffc1cf938f24378d32bf3be4019eb3be1562d9cb6ff2455187e158edf4",
+  "sealed_slots": [
+    {
+      "slot_id": "t-5853ea098df5cef4",
+      "trial_id": "t-925ae5f5be1fdd38",
+      "model_key": "primary",
+      "reason": "aborted_indeterminate; never reuse"
+    },
+    {
+      "slot_id": "t-8513e0837628cb1d",
+      "trial_id": "t-d0b221927ff47dd1",
+      "model_key": "secondary",
+      "reason": "aborted_indeterminate; never reuse"
+    },
+    {
+      "slot_id": "t-d0756361e62c67ed",
+      "trial_id": "t-1b2f8a7e0f1e7f4d",
+      "model_key": "secondary",
+      "reason": "aborted_indeterminate; never reuse"
+    },
+    {
+      "slot_id": "t-b6a84dbdcbb5715d",
+      "trial_id": "t-bfb7af4ccd9d403d",
+      "model_key": "primary",
+      "reason": "aborted_indeterminate; never reuse"
+    },
+    {
+      "slot_id": "t-efcc794baada1ced",
+      "trial_id": "t-645356c99ae73d8e",
+      "model_key": "secondary",
+      "reason": "aborted_indeterminate; never reuse"
+    },
+    {
+      "slot_id": "t-a3f5517531c5f88b",
+      "trial_id": "t-9b4a333ca851806b",
+      "model_key": "primary",
+      "reason": "aborted_indeterminate; never reuse"
+    }
+  ],
+  "replacement_schedule": {
+    "file": "configs/mechanism_gate_e1_v1_positive_gate_schedule.csv",
+    "sha256": "b7f0c6c0a7dc1e13ab78cc9bdcbe2f1dd2807ea18558d888c75de6d7cae24e8f",
+    "seed": 14278692412268622755,
+    "planned_slots": 6,
+    "model_counts": {
+      "primary": 3,
+      "secondary": 3
+    },
+    "all_slot_and_retry_ids_disjoint_from_sealed_schedule": true
+  },
+  "api_calls_made_by_this_recording_script": 0
+}
