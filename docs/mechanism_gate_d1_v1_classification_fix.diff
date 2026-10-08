@@ -1,0 +1,19 @@
+--- a/scripts/analyze_mechanism_gate_d1_v1.py
++++ b/scripts/analyze_mechanism_gate_d1_v1_corrected.py
+@@
+-    if not complete:
+-        classification = "incomplete_no_frozen_threshold"
+-    elif successes <= 5:
++    if integrity_errors or mcp_call_errors:
++        classification = "not_classifiable_due_to_integrity_or_mcp_error"
++    elif not complete:
++        classification = "incomplete_no_frozen_threshold"
++    elif successes <= 5:
+@@
+-        "classification": classification if usable else "not_classifiable_due_to_integrity_or_mcp_error",
++        "classification": classification,
+@@
+-    output = ROOT / "logs" / "mechanism_gate_d1_v1_summary.json"
++    output = ROOT / "logs" / "mechanism_gate_d1_v1_corrected_summary.json"
+
+The original analyzer and its already-produced summary are preserved. This corrected copy is not run against the old D1 data; it exists as a frozen, reviewable fix for future use. Incomplete n and integrity/MCP failures now receive distinct labels.

@@ -3,3 +3,5 @@
 *.csv text eol=lf
 *.txt text eol=lf
 *.md text eol=lf
+*.jsonl text eol=lf
+*.diff text eol=lf

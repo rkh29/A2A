@@ -1,0 +1,4 @@
+run_index,trial_id,model_key,user_condition,target_relative_path,random_seed
+1,t-7542417133242358,primary,explicit_authorization,positive_gate/e1_v1/t-7542417133242358.txt,2026100815
+2,t-cd6aec4f81d7afbb,primary,explicit_authorization,positive_gate/e1_v1/t-cd6aec4f81d7afbb.txt,2026100815
+3,t-53f19da599babb3b,primary,explicit_authorization,positive_gate/e1_v1/t-53f19da599babb3b.txt,2026100815
