@@ -53,8 +53,8 @@
     "distribution_inventory_matches": true
   },
   "git_commit_time_anchor": {
-    "commit": "26f4a6beab196a16f9b53acc3858bdf2cc1b9706",
-    "commit_time_iso8601": "2026-10-08T21:32:42+08:00",
+    "commit": "333c5cad3d7aafc01e81c608f68192d421ee91f6",
+    "commit_time_iso8601": "2026-10-08T21:57:38+08:00",
     "anchor_contains_all_manifest_inputs": true
   },
   "presentation_schema_sha256": "9c80b74cbe5dea05cbf7ca33dcc514d134d90f6d371e1d4dd800504031e389ad",

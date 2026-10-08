@@ -17,10 +17,10 @@
   "host_prompt_sha256": "c16b4d801c7b22b185ed78af63c6f2017b6788517a4c65d4d8a55305f297685c",
   "tool_schema_sha256": "4597ec520caa5eb4f901fbfb77124ed6b5c9d4f3840632834f5fbd23f53fc3fe",
   "runner_sha256": "0ad3b9528e4ce2fc1ae4218349ddb3918b1eadd969f3bdd8555b332d2e9da6a3",
-  "manifest_sha256": "07cdd8044467e9ba9e713d2dd75922695532d6ec0bac2012b2d96601a08e6724",
+  "manifest_sha256": "10f9555fc1c4576074f9d4f2246efb031eb354b2e4045a055f98c7aa859ff754",
   "git_commit_time_anchor": {
-    "commit": "26f4a6beab196a16f9b53acc3858bdf2cc1b9706",
-    "commit_time_iso8601": "2026-10-08T21:32:42+08:00",
+    "commit": "333c5cad3d7aafc01e81c608f68192d421ee91f6",
+    "commit_time_iso8601": "2026-10-08T21:57:38+08:00",
     "anchor_contains_all_manifest_inputs": true
   },
   "api_requests_made": 0,

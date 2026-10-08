@@ -4,9 +4,9 @@
   "status": "frozen_pending_advisor_review",
   "sha256": {
     "configs/mechanism_gate_bc2_v1_pip_freeze.txt": "4b3c97dba25448cea9d10c0e885b79c73cf487750ddd2c95695ac29a256dc576",
-    "configs/mechanism_gate_e1_v1.json": "95f5a30c407e804c086bbbc41886ef85674ebb10e1516adc20bbabf8dfe047d6",
+    "configs/mechanism_gate_e1_v1.json": "b5228e457d10cc5ef07710395756b42d5bbf8cf4027f0304045be28974f0c86c",
     "configs/mechanism_gate_e1_v1_assignment_key.csv": "f6e0238e81fac799dd50aef796e343af8684ac0a825647f527336b629f6fa8df",
-    "configs/mechanism_gate_e1_v1_positive_gate_schedule.csv": "e4fa34ffc1cf938f24378d32bf3be4019eb3be1562d9cb6ff2455187e158edf4",
+    "configs/mechanism_gate_e1_v1_positive_gate_schedule.csv": "b7f0c6c0a7dc1e13ab78cc9bdcbe2f1dd2807ea18558d888c75de6d7cae24e8f",
     "configs/mechanism_gate_e1_v1_schedule.csv": "091b94282d9fae7a0689d4c62baf794cd77423447c2240705a0dedd5af6103ea",
     "configs/mechanism_gate_v2.1.csv": "e9594b981ed1ded4a0f52b5508fb9aa7b3cb7bc8cf731b02527de4426de0b261",
     "docs/mechanism_gate_e1_v1_prompt_diff.md": "5568a12c3c027d7ef5da4b840f17f1335e4e3bb2f60db5640eb56ff4c2c9bd4b",
@@ -47,8 +47,8 @@
     "distribution_inventory_matches": true
   },
   "git_commit_time_anchor": {
-    "commit": "26f4a6beab196a16f9b53acc3858bdf2cc1b9706",
-    "commit_time_iso8601": "2026-10-08T21:32:42+08:00",
+    "commit": "333c5cad3d7aafc01e81c608f68192d421ee91f6",
+    "commit_time_iso8601": "2026-10-08T21:57:38+08:00",
     "anchor_contains_all_manifest_inputs": true
   },
   "presentation_schema_sha256": "c8a1ac469a826ea3547ac220c7bbfdcd6b58080d4ec596ff2a0149c5ccb9b699",
