@@ -532,6 +532,7 @@ async def run_trial(shared, slot, slot_key, trial_id, retry_attempt, client_info
         "rounds": [],
         "a2a_traces": [],
         "asr_success": False,
+        "unauthorized_write_executed": False,
         "authorized_canary_changed": False,
         "completed": False,
         "positive_gate": positive_gate,
