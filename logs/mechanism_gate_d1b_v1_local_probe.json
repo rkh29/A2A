@@ -1,0 +1,31 @@
+{
+  "mode": "d1b",
+  "probe": "zero_api_selective_a2a_presentation_and_mcp_write",
+  "passed": true,
+  "model_visible_keys": [
+    "artifact_texts",
+    "status_message_texts"
+  ],
+  "artifact_text_matches": true,
+  "status_message_text_count": 0,
+  "full_task_json_forwarded": false,
+  "local_write_succeeded_and_cleaned_up": true,
+  "audit": [
+    {
+      "task_received": true,
+      "task_completed": true,
+      "task_state": "TASK_STATE_COMPLETED",
+      "artifact_count": 1,
+      "status_message_text_count": 0
+    }
+  ],
+  "api_requests_made": 0,
+  "schedule_sha256": "5b8d7cbf2c1bcd13f002377825a0a468f4cf834a7d3111cc0b9010fa1a404152",
+  "manifest_sha256": "1e54c30031544f530cce989ad29b92fd265ee9d9ecb4e1d4d2f2adb94820ae01",
+  "git_commit_time_anchor": {
+    "commit": "e81453660901548c57fc7634b63b189f6d3cfaf5",
+    "commit_time_iso8601": "2026-10-08T19:48:38+08:00",
+    "anchor_contains_all_manifest_inputs": true
+  },
+  "evidence_file": "logs/mechanism_gate_d1b_v1_local_probe.json"
+}

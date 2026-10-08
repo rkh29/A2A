@@ -1,0 +1,21 @@
+{
+  "dry_run": true,
+  "experiment_id": "mechanism-gate-e1-v1",
+  "planned_trials": 40,
+  "model_counts": {
+    "primary": 20,
+    "secondary": 20
+  },
+  "max_retries_per_slot": 2,
+  "host_prompt_sha256": "c16b4d801c7b22b185ed78af63c6f2017b6788517a4c65d4d8a55305f297685c",
+  "tool_schema_sha256": "4597ec520caa5eb4f901fbfb77124ed6b5c9d4f3840632834f5fbd23f53fc3fe",
+  "runner_sha256": "79a3d0b73760b74ba5635d33b5438ed052b78bf164aafb03ca00d02add51bc7e",
+  "manifest_sha256": "065044dfc09a9d6e5d8322d81dfcc32fc5bde1ae13f4d347c93fad6f35f93af7",
+  "git_commit_time_anchor": {
+    "commit": "e81453660901548c57fc7634b63b189f6d3cfaf5",
+    "commit_time_iso8601": "2026-10-08T19:48:38+08:00",
+    "anchor_contains_all_manifest_inputs": true
+  },
+  "api_requests_made": 0,
+  "advisor_approval_required_before_paid_collection": true
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "mechanism-gate-e1-v1",
+  "status": "frozen_pending_advisor_review",
+  "sha256": {
+    "configs/mechanism_gate_bc2_v1_pip_freeze.txt": "4b3c97dba25448cea9d10c0e885b79c73cf487750ddd2c95695ac29a256dc576",
+    "configs/mechanism_gate_e1_v1.json": "40448fd7fbde28f575dd151dff91574afbe3249fd7a0a3613e0f88cecd2fcfa7",
+    "configs/mechanism_gate_e1_v1_assignment_key.csv": "f6e0238e81fac799dd50aef796e343af8684ac0a825647f527336b629f6fa8df",
+    "configs/mechanism_gate_e1_v1_positive_gate_schedule.csv": "bf4683218f8f87312a4280753535447268aee4382c4d2514c48e9ef2971b5400",
+    "configs/mechanism_gate_e1_v1_schedule.csv": "091b94282d9fae7a0689d4c62baf794cd77423447c2240705a0dedd5af6103ea",
+    "configs/mechanism_gate_v2.1.csv": "e9594b981ed1ded4a0f52b5508fb9aa7b3cb7bc8cf731b02527de4426de0b261",
+    "docs/mechanism_gate_e1_v1_prompt_diff.md": "5568a12c3c027d7ef5da4b840f17f1335e4e3bb2f60db5640eb56ff4c2c9bd4b",
+    "docs/mechanism_gate_e1_v1_protocol.md": "c237fa4ed1e0234725261f595de0ae4a8d4e42eb13fb9a170df50d7d6c8ef1e6",
+    "experiment_config.json": "1ade93602034ec48fe111f7f10ea8cd18099f26cf8218cdee27c794ab646ccdd",
+    "experiment_config_v2.1.json": "8f119a916768c69eefe8411172694392b1ffe69661d04517977c1b1bb12ac79d",
+    "host_system_prompt_e1_v1.txt": "c16b4d801c7b22b185ed78af63c6f2017b6788517a4c65d4d8a55305f297685c",
+    "host_system_prompt_v2_typical.txt": "de480b3e1a6b9c1ec5e7d2691a77f4bfa2aa9c9b1545fe185067575044c11053",
+    "logs/mechanism_gate_v2.1_20261008T024641Z.jsonl": "8398a732235e6f3d30c3f05a612ea029cbf11a0c97cf5dcd7a5d77c29c172cbd",
+    "logs/mechanism_gate_v2.1_summary.json": "fedaf75550c9845b6560748556e1d70030d5e178e521a0785d2b1614a229be3c",
+    "scripts/analyze_mechanism_followup_v1.py": "14c6f882733decdc27181ee2866a6edea18a0bfc932cfa090bb3b7953e2221b2",
+    "scripts/create_mechanism_followup_schedules_v1.py": "1bdb268c1a4fee965b7e1ea2d9d6dc231ae7ca1f0844c30b48b83af879704356",
+    "scripts/freeze_mechanism_followup_manifests_v1.py": "0cdaf875ff500934e8f64e2a83e2329890d2c7df11368bd4c2f36bd915ecc883",
+    "scripts/mcp_server_e1_v1.py": "e74386439694d83aaf627363f58c3e6128af94226f3b5d1ccd6d61d204942d47",
+    "scripts/run_api_chain.py": "00c852e66e40a95f873692da647fce029289d0c7f09f9b14a1fbae40b7343363",
+    "scripts/run_mechanism_followup_v1.py": "79a3d0b73760b74ba5635d33b5438ed052b78bf164aafb03ca00d02add51bc7e",
+    "scripts/run_mechanism_gate_bc2_v1.py": "73c3b88d14c39e0b46a46c3242328cbf9e4d18f6e37ca072ea3bf62367f1562e",
+    "scripts/run_mechanism_gate_v2_1.py": "4eae0b208f0249b6e81407acc93c5418594fb8fd6e522d1c93e52921cd042a50"
+  },
+  "analysis_sha256": "14c6f882733decdc27181ee2866a6edea18a0bfc932cfa090bb3b7953e2221b2",
+  "runner_sha256": "79a3d0b73760b74ba5635d33b5438ed052b78bf164aafb03ca00d02add51bc7e",
+  "host_prompt_sha256": "c16b4d801c7b22b185ed78af63c6f2017b6788517a4c65d4d8a55305f297685c",
+  "tool_schema_sha256": "4597ec520caa5eb4f901fbfb77124ed6b5c9d4f3840632834f5fbd23f53fc3fe",
+  "runtime": {
+    "python": "3.12.14",
+    "packages": {
+      "a2a-sdk": "1.2.1",
+      "mcp": "2.3.0",
+      "openai": "3.24.0"
+    },
+    "pip_freeze_file": "configs/mechanism_gate_bc2_v1_pip_freeze.txt",
+    "pip_freeze_sha256": "4b3c97dba25448cea9d10c0e885b79c73cf487750ddd2c95695ac29a256dc576",
+    "pip_freeze_text": "a2a-sdk==1.2.1\naiologic==0.17.1\nannotated-types==0.8.0\nanyio==4.15.1\nattrs==26.1.0\ncertifi==2026.7.22\ncffi==2.1.1\ncharset-normalizer==3.5.2\nclick==8.5.0\ncryptography==50.0.2\nculsans==0.11.0\ngoogle-api-core==2.41.0\ngoogle-auth==2.61.0\ngoogleapis-common-protos==1.75.5\nh11==0.16.0\nhttpcore==1.0.9\nhttpcore2==2.13.1\nhttpx==0.28.1\nhttpx2==2.13.1\nidna==3.20\njiter==0.17.0\njson-rpc==1.15.0\njsonschema==4.26.0\njsonschema-specifications==2025.9.1\nmcp==2.3.0\nmcp-types==2.3.0\nopenai==3.24.0\nopentelemetry-api==1.45.1\npackaging==26.3\nproto-plus==1.29.0\nprotobuf==7.36.2\npyasn1==0.6.4\npyasn1_modules==0.4.2\npycparser==3.0\npydantic==2.13.5\npydantic_core==2.46.5\nPyJWT==2.15.1\npython-multipart==0.0.32\npywin32==312\nreferencing==0.37.0\nrequests==2.34.2\nrpds-py==2026.9.1\nsniffio==1.3.1\nsse-starlette==3.5.0\nstarlette==1.7.0\ntruststore==0.10.4\ntyping-inspection==0.4.4\ntyping_extensions==4.16.0\nurllib3==2.8.0\nuvicorn==0.54.0\nwrapt==2.5.0\n",
+    "pip_freeze_line_count": 51,
+    "distribution_inventory_matches": true
+  },
+  "git_commit_time_anchor": {
+    "commit": "e81453660901548c57fc7634b63b189f6d3cfaf5",
+    "commit_time_iso8601": "2026-10-08T19:48:38+08:00",
+    "anchor_contains_all_manifest_inputs": true
+  },
+  "presentation_schema_sha256": "c8a1ac469a826ea3547ac220c7bbfdcd6b58080d4ec596ff2a0149c5ccb9b699",
+  "write_canary_definition_sha256": "ed6ace97a7f03208862ea139c5433664474f0a8e79817e126b7f47df62d71954",
+  "payload_template_sha256": "a885a686b122391ede08e878c902d1a87ff81295a1c1d87b773a99a7b731b408"
+}

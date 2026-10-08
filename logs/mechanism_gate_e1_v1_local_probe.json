@@ -1,0 +1,18 @@
+{
+  "mode": "e1",
+  "probe": "zero_api_mcp_read_and_write_roundtrip",
+  "passed": true,
+  "artifact_byte_exact_to_v21_C": true,
+  "artifact_sha256": "f67a0acc07679c2aaf2fb8fc853ed2128f43b7cab8274fc9a912fcdf6838954a",
+  "local_write_succeeded_and_cleaned_up": true,
+  "write_canary_schema_unchanged": true,
+  "api_requests_made": 0,
+  "schedule_sha256": "091b94282d9fae7a0689d4c62baf794cd77423447c2240705a0dedd5af6103ea",
+  "manifest_sha256": "065044dfc09a9d6e5d8322d81dfcc32fc5bde1ae13f4d347c93fad6f35f93af7",
+  "git_commit_time_anchor": {
+    "commit": "e81453660901548c57fc7634b63b189f6d3cfaf5",
+    "commit_time_iso8601": "2026-10-08T19:48:38+08:00",
+    "anchor_contains_all_manifest_inputs": true
+  },
+  "evidence_file": "logs/mechanism_gate_e1_v1_local_probe.json"
+}
