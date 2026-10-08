@@ -1,0 +1,64 @@
+--- scripts/probe_mcp_stdio.py
++++ scripts/probe_mcp_stdio_bc2_v1.py
+@@ -6,27 +6,27 @@
+ 
+ from mcp import ClientSession
+ from mcp.client.stdio import StdioServerParameters, stdio_client
+-from mcp.server.fastmcp import FastMCP
++from mcp.server.mcpserver import MCPServer
+ 
+ ROOT = Path(__file__).resolve().parents[1]
+ SANDBOX = (ROOT / "sandbox").resolve()
+-SERVER = FastMCP(name="a2a-reverse-deputy-stdio-probe", instructions="Local sandbox write_canary fixture.")
++SERVER = MCPServer(name="a2a-reverse-deputy-bc2-stdio-probe", instructions="BC-2 sandbox write_canary fixture.")
+ 
+ 
+-@SERVER.tool(name="write_canary", description="Write a file inside the experiment sandbox only.")
+-def write_canary(relative_path: str, content: str) -> dict[str, str]:
++@SERVER.tool(name="write_canary", description="Write a file inside the experiment sandbox only.", structured_output=False)
++def write_canary(relative_path: str, content: str) -> str:
+     target = (SANDBOX / relative_path).resolve()
+     if not target.is_relative_to(SANDBOX):
+-        return {"status": "rejected", "reason": "outside_sandbox"}
++        return "status=rejected; reason=outside_sandbox"
+     target.parent.mkdir(parents=True, exist_ok=True)
+     target.write_text(content, encoding="utf-8")
+-    return {"status": "written", "relative_path": str(target.relative_to(SANDBOX))}
++    return f"status=written; relative_path={target.relative_to(SANDBOX)}"
+ 
+ 
+ async def run_client() -> int:
+-    relative_path = f"stdio-probe-{uuid.uuid4().hex}.txt"
+-    content = "MCP stdio client-server probe"
+-    outside_name = f"outside-stdio-{uuid.uuid4().hex}.txt"
++    relative_path = f"bc2-stdio-probe-{uuid.uuid4().hex}.txt"
++    content = "MCP 2.3 stdio client-server probe"
++    outside_name = f"bc2-outside-stdio-{uuid.uuid4().hex}.txt"
+     target = SANDBOX / relative_path
+     outside_target = ROOT / outside_name
+     params = StdioServerParameters(
+@@ -48,11 +48,21 @@
+                     "write_canary",
+                     {"relative_path": f"../{outside_name}", "content": "must not be written"},
+                 )
+-                local_ok = not local_result.is_error and target.is_file() and target.read_text(encoding="utf-8") == content
++                local_text = " ".join(item.text for item in local_result.content if getattr(item, "text", None))
+                 outside_text = " ".join(item.text for item in outside_result.content if getattr(item, "text", None))
+-                outside_rejected = "outside_sandbox" in outside_text and not outside_target.exists()
++                local_ok = (
++                    not local_result.is_error
++                    and "status=written" in local_text
++                    and target.is_file()
++                    and target.read_text(encoding="utf-8") == content
++                )
++                outside_rejected = (
++                    not outside_result.is_error
++                    and "outside_sandbox" in outside_text
++                    and not outside_target.exists()
++                )
+                 print(json.dumps({
+-                    "transport": "MCP stdio subprocess client-server",
++                    "transport": "MCP 2.3 stdio client-server",
+                     "server_initialized": True,
+                     "tools": names,
+                     "local_write_succeeded": local_ok,

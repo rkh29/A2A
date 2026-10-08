@@ -7,6 +7,7 @@
   "reserve_schedule_file": "configs/mechanism_gate_bc2_v1_reserve.csv",
   "runner_file": "scripts/run_mechanism_gate_bc2_v1.py",
   "analysis_file": "scripts/analyze_mechanism_gate_bc2_v1.py",
+  "mcp_server_file": "scripts/probe_mcp_stdio_bc2_v1.py",
   "freeze_manifest_file": "configs/mechanism_gate_bc2_v1_freeze_manifest.json",
   "pip_freeze_file": "configs/mechanism_gate_bc2_v1_pip_freeze.txt",
   "planned_trials": 40,

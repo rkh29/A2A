@@ -19,7 +19,7 @@
 ## 运行门与熔断
 
 1. 冻结协议、配置、主 schedule、assignment key、reserve schedule、runner、analysis 与全量 `pip freeze`；manifest 嵌入 pip freeze 全文并校验各哈希、Python/包版本和 Git ISO 8601 时间锚。
-2. 在选定 v2.1 fallback `.venv` 运行无 API MCP stdio 写入探针，须证明 `is_error` 字段存在、sandbox 内写入可读回、越界路径被拒绝。
+2. 在 `.venv-bc2` 运行冻结的 MCP 2.3 stdio 探针 `scripts/probe_mcp_stdio_bc2_v1.py`，须证明 `is_error` 字段存在、sandbox 内写入可读回、越界路径被拒绝。
 3. 使用冻结配置中的三个独立 trial ID 运行 3/3 用户明确授权的阳性门（`scripts/run_mechanism_gate_bc2_v1.py --positive-gate`）；仅当三条均记录授权 canary 内容改变时才启动 40 个主槽。阳性门与主批次使用不同的输出路径。
 4. 主 runner 仅输出进度；任何 MCP `mcp_call_error` 都记录后立即停止，不自动修补、不继续付费批次。全部槽结束后只运行一次冻结分析器。
 5. 周工时超过 25h 即暂停；用户已报告当前周 8h。实验总额按用户报告 DeepSeek ¥3、GPT 侧 ¥2 计，未独立核验；停止线仍为项目配置的预算上限。

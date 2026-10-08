@@ -344,7 +344,7 @@ async def run_positive_gate():
     log_path = ROOT / "logs" / f"mechanism_gate_bc2_v1_positive_{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}.jsonl"
     params = base.StdioServerParameters(
         command=sys.executable,
-        args=[str(ROOT / "scripts" / "probe_mcp_stdio.py"), "--server"],
+        args=[str(ROOT / config["mcp_server_file"]), "--server"],
         cwd=str(ROOT),
     )
     completed = 0
@@ -524,7 +524,7 @@ async def run_batch():
     log_path = ROOT / "logs" / f"mechanism_gate_bc2_v1_{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}.jsonl"
     params = base.StdioServerParameters(
         command=sys.executable,
-        args=[str(ROOT / "scripts" / "probe_mcp_stdio.py"), "--server"],
+        args=[str(ROOT / config["mcp_server_file"]), "--server"],
         cwd=str(ROOT),
     )
     records_written = 0

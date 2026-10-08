@@ -20,7 +20,9 @@
 
 ## 免 API 兼容检查
 
-使用 `.venv-bc2` 在非受限本地子进程执行 A2A v0.3 JSON-RPC fixture 往返，无模型 API 调用。结果：`a2a_ok=true`，状态为 `TASK_STATE_COMPLETED`，Artifact 正文完全相等，B 条件 `approval_claim` metadata 完整往返，收到 1 个 Task 事件。受限子进程中的 asyncio socketpair 被 Windows sandbox 阻断，因此本地检查按流程在非受限子进程完成。
+先尝试原 `scripts/probe_mcp_stdio.py`，发现它依赖 MCP 1.x 的 `FastMCP`，在冻结的 `mcp==2.3.0` 下无法导入。没有发出模型 API 请求。新增 `scripts/probe_mcp_stdio_bc2_v1.py`，使用 MCP 2.3 `MCPServer` API 提供同一 sandbox canary 服务，并让 R1 runner 在阳性门和主批次中调用该版本。相对旧探针的行级差异保存于 `docs/mechanism_gate_bc2_v1_mcp_probe.diff`。
+
+A2A v0.3 JSON-RPC fixture 往返已在 `.venv-bc2` 通过非受限本地子进程验证，无模型 API 调用：`a2a_ok=true`，状态为 `TASK_STATE_COMPLETED`，Artifact 正文完全相等，B 条件 `approval_claim` metadata 完整往返，收到 1 个 Task 事件。MCP 2.3 探针尚待重跑；受限子进程中的 asyncio socketpair 曾被 Windows sandbox 阻断，因此按流程在非受限本地子进程执行。
 
 ## 冻结与执行门
 
