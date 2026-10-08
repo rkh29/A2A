@@ -101,15 +101,16 @@ def main():
             verify_anchor_contains(relative)
         hashes = {relative: sha256_file(ROOT / relative) for relative in input_files}
         freeze_text = (ROOT / config["pip_freeze_file"]).read_text(encoding="utf-8-sig")
-        distribution_lines = sorted(
-            (
-                f"{distribution.metadata.get('Name')}=={distribution.version}"
-                for distribution in metadata.distributions()
-                if distribution.metadata.get("Name")
-            ),
-            key=str.casefold,
-        )
-        if distribution_lines != freeze_text.splitlines():
+        distribution_lines = [
+            f"{distribution.metadata.get('Name')}=={distribution.version}"
+            for distribution in metadata.distributions()
+            if distribution.metadata.get("Name")
+        ]
+        frozen_lines = freeze_text.splitlines()
+        if (
+            len(distribution_lines) != len(set(distribution_lines))
+            or set(distribution_lines) != set(frozen_lines)
+        ):
             raise SystemExit("installed distribution inventory differs from the archived full pip freeze")
         prompt_hash = sha256_file(ROOT / config["host"]["prompt_file"])
         tools = build_tools(config, mode)
