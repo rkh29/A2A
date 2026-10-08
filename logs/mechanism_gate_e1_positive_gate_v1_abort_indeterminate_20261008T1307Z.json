@@ -8,10 +8,11 @@
     "local_target_directory_exists": false,
     "matching_jsonl_count": 0,
     "matching_summary_count": 0,
-    "provider_counter_source": "manual values supplied by user in chat, confirmed as interruption-window counts",
+    "provider_counter_source": "User-supplied values in chat; not independently verified against provider consoles.",
     "deepseek_requests_reported": 80,
     "relayrouter_requests_reported": 80,
-    "interpretation": "nonzero provider counters conflict with missing local run traces; do not infer zero requests or assign provider activity to individual trials"
+    "interpretation": "User-supplied nonzero counts with unresolved scope conflict with missing local run traces; preserve the conservative aborted_indeterminate disposition and do not assign counts to individual trials.",
+    "counter_scope": "Unresolved. Advisor review assesses 80/80 as likely cumulative or day-level totals; attribution to the interrupted window is not established."
   },
   "approximate_interruption_window_utc": "2026-10-08 13:07-13:13Z; exact boundary unavailable because no run JSONL was created",
   "old_schedule_sha256": "e4fa34ffc1cf938f24378d32bf3be4019eb3be1562d9cb6ff2455187e158edf4",
@@ -64,5 +65,14 @@
     },
     "all_slot_and_retry_ids_disjoint_from_sealed_schedule": true
   },
-  "api_calls_made_by_this_recording_script": 0
+  "api_calls_made_by_this_recording_script": 0,
+  "correction_history": [
+    {
+      "recorded_at_utc": "2026-10-08T14:12:02.672720Z",
+      "field": "basis.provider_counter_source and basis.counter_scope",
+      "previous_wording": "manual values supplied by user in chat, confirmed as interruption-window counts",
+      "corrected_wording": "User-supplied values in chat; not independently verified against provider consoles.",
+      "reason": "Advisor clarified that no provider-console value or interruption-window scope was independently confirmed; retain only the user-supplied counts and mark scope unresolved."
+    }
+  ]
 }
