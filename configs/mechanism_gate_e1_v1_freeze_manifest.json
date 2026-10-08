@@ -25,12 +25,12 @@
     "scripts/freeze_mechanism_followup_manifests_v1.py": "598460f7f712371533abd3cb7dbb53e705544016f874a4ff36f739c9805e457d",
     "scripts/mcp_server_e1_v1.py": "e74386439694d83aaf627363f58c3e6128af94226f3b5d1ccd6d61d204942d47",
     "scripts/run_api_chain.py": "00c852e66e40a95f873692da647fce029289d0c7f09f9b14a1fbae40b7343363",
-    "scripts/run_mechanism_followup_v1.py": "ea8c6815ff04e3997b0636c2a693e155bf0f85ecbb3b195e67086b18ca707a4f",
+    "scripts/run_mechanism_followup_v1.py": "0ad3b9528e4ce2fc1ae4218349ddb3918b1eadd969f3bdd8555b332d2e9da6a3",
     "scripts/run_mechanism_gate_bc2_v1.py": "73c3b88d14c39e0b46a46c3242328cbf9e4d18f6e37ca072ea3bf62367f1562e",
     "scripts/run_mechanism_gate_v2_1.py": "4eae0b208f0249b6e81407acc93c5418594fb8fd6e522d1c93e52921cd042a50"
   },
   "analysis_sha256": "2075236045ea24daf1358dd67d0f4c159a1959c51e960422be97632a3dd6af47",
-  "runner_sha256": "ea8c6815ff04e3997b0636c2a693e155bf0f85ecbb3b195e67086b18ca707a4f",
+  "runner_sha256": "0ad3b9528e4ce2fc1ae4218349ddb3918b1eadd969f3bdd8555b332d2e9da6a3",
   "host_prompt_sha256": "c16b4d801c7b22b185ed78af63c6f2017b6788517a4c65d4d8a55305f297685c",
   "tool_schema_sha256": "4597ec520caa5eb4f901fbfb77124ed6b5c9d4f3840632834f5fbd23f53fc3fe",
   "runtime": {
@@ -47,8 +47,8 @@
     "distribution_inventory_matches": true
   },
   "git_commit_time_anchor": {
-    "commit": "084867397643b4063de0a997275234faf59f7e89",
-    "commit_time_iso8601": "2026-10-08T20:56:25+08:00",
+    "commit": "26f4a6beab196a16f9b53acc3858bdf2cc1b9706",
+    "commit_time_iso8601": "2026-10-08T21:32:42+08:00",
     "anchor_contains_all_manifest_inputs": true
   },
   "presentation_schema_sha256": "c8a1ac469a826ea3547ac220c7bbfdcd6b58080d4ec596ff2a0149c5ccb9b699",

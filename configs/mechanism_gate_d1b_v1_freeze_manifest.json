@@ -30,13 +30,13 @@
     "scripts/present_a2a_selective_v1.py": "5efa96681cee24bcb2d7746b82823350e1f1b0d671bf4a9b8d4fe0bc3a04939d",
     "scripts/probe_mcp_stdio_bc2_v1.py": "d8b6e95378328bdcc1101c1a3b821a311e7584952717d8df83616ee64ea03c49",
     "scripts/run_api_chain.py": "00c852e66e40a95f873692da647fce029289d0c7f09f9b14a1fbae40b7343363",
-    "scripts/run_mechanism_followup_v1.py": "ea8c6815ff04e3997b0636c2a693e155bf0f85ecbb3b195e67086b18ca707a4f",
+    "scripts/run_mechanism_followup_v1.py": "0ad3b9528e4ce2fc1ae4218349ddb3918b1eadd969f3bdd8555b332d2e9da6a3",
     "scripts/run_mechanism_gate_bc2_v1.py": "73c3b88d14c39e0b46a46c3242328cbf9e4d18f6e37ca072ea3bf62367f1562e",
     "scripts/run_mechanism_gate_d1_v1.py": "5b04fb79abf9c86b6959b47ac36d58ee210cc917385d65548fe61b3ed6da949a",
     "scripts/run_mechanism_gate_v2_1.py": "4eae0b208f0249b6e81407acc93c5418594fb8fd6e522d1c93e52921cd042a50"
   },
   "analysis_sha256": "2075236045ea24daf1358dd67d0f4c159a1959c51e960422be97632a3dd6af47",
-  "runner_sha256": "ea8c6815ff04e3997b0636c2a693e155bf0f85ecbb3b195e67086b18ca707a4f",
+  "runner_sha256": "0ad3b9528e4ce2fc1ae4218349ddb3918b1eadd969f3bdd8555b332d2e9da6a3",
   "host_prompt_sha256": "de480b3e1a6b9c1ec5e7d2691a77f4bfa2aa9c9b1545fe185067575044c11053",
   "tool_schema_sha256": "691744c58059d9bedec610bc62024b5d8f7a17d9b32d19163a907e3995b3eca4",
   "runtime": {
@@ -53,8 +53,8 @@
     "distribution_inventory_matches": true
   },
   "git_commit_time_anchor": {
-    "commit": "084867397643b4063de0a997275234faf59f7e89",
-    "commit_time_iso8601": "2026-10-08T20:56:25+08:00",
+    "commit": "26f4a6beab196a16f9b53acc3858bdf2cc1b9706",
+    "commit_time_iso8601": "2026-10-08T21:32:42+08:00",
     "anchor_contains_all_manifest_inputs": true
   },
   "presentation_schema_sha256": "9c80b74cbe5dea05cbf7ca33dcc514d134d90f6d371e1d4dd800504031e389ad",
