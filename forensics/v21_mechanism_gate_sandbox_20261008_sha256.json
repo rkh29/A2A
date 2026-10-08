@@ -1,0 +1,687 @@
+{
+  "created_at_utc": "2026-10-08T12:42:45.156853+00:00",
+  "source_directory": "sandbox/typical_v2/mechanism_gate",
+  "archive_file": "forensics/v21_mechanism_gate_sandbox_20261008.tar",
+  "archive_size_bytes": 276480,
+  "archive_sha256": "7564b1beb1ac30e0ea3585e57dea91e191d40aa93a4abf36ffe972db8c16fcf3",
+  "source_file_count": 130,
+  "source_total_bytes": 9287,
+  "files": [
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-000b70f36bd4fbb4.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-00628eb50a6bb6ce.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-00a854c674038ff5.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-0286bffce7a32437.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-028f8ec61ba28bea.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-049a118bee72143a.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-0510e7bb5d03e166.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-07ad0d8a690ba140.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-07daf055f70b4eef.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-07dbf1653fb10397.txt",
+      "size_bytes": 392,
+      "sha256": "bdaf35f7e9ae172feebe0499c687d3f29e0ec53bffd4cbf6673ac1c442dcc7d4"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-0a031537fad854b3.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-0ed0cc04ac58b36a.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-0f031ca3adfdf86a.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-118be3e5ca0e0dd8.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-1639ccae0be87385.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-17aebafcc1f24820.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-1bacde374c8e55e0.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-1c1f0e6e9caab4c5.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-1e755f1d74658715.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-21ecd59e658857db.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-2421e062b7d538c9.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-24b18aeaf9b52e5a.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-24ee548bbe7d10dd.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-252e2a7f377ba84a.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-26978de1bf3b08eb.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-2a93d7482c72c180.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-2fb8d55e96e164a6.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-304e4636026d4797.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-3131091b2b9ee5f6.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-36999ab5d1a0a6ad.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-37097b8c8cdeafec.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-3bb03db859a625bd.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-3c4935b6a448ff45.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-3d2ca5aab77bf931.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-3f64e6615c6fd32d.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-40efe5ae80b7fc9b.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-40f639db5b4f3893.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-442b920415cb923f.txt",
+      "size_bytes": 261,
+      "sha256": "364a8bac335518314238cb562bde0686ce8c3ef5708a5d737b53d1c53fd427bd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-4466cb3a91387e16.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-452f02db83825c48.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-4a6a98fbd18674df.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-4baef11364cf84a3.txt",
+      "size_bytes": 392,
+      "sha256": "7fc1f6b9f4133bf684ff03fb70c324a5b43b0c06593b3d551943e495e31f0bf8"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-4c3223360c8aa1c3.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-4e0f6435e1563052.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-500c3a3f3df3b49f.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-510a096486f40abf.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-53b5450366c24067.txt",
+      "size_bytes": 261,
+      "sha256": "9de648ca429c8fdb7c42400c094cf154f50e42b3ff49aa094e27417838286431"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-5452b31141d28acf.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-5818921d813f9df8.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-58af088b4cab83a6.txt",
+      "size_bytes": 392,
+      "sha256": "64a45be3a9414eb8ee2bd10d802cf2554bf41e4e29bcfc2aca8f0a2f8ea8309f"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-5a16d2aaf84d3252.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-5fe842ec6a88d08d.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-62fd986874528b19.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-633161fcc0eedab4.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-650e5520bce9157d.txt",
+      "size_bytes": 261,
+      "sha256": "ef0d08dc0e4a77e61e7cd9a66d42a6e370b6a72dc6f2a96189de58af20fdb8b0"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-67cfc7eaf80638d4.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-69ae74e014ec2b9f.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-69b3a676ec769bb6.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-6b38603d8bc926f5.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-6c2eca898a963238.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-6e0e30666709a61e.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-72c5782360caa6d4.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-74406d9e3a2128ac.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-74b03cb32f5caf77.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-7cecd34402ff23c9.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-7db5a37cbb0fbb09.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-84d3668509638183.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-85303bde6afdc3e2.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-8799d170d4007f72.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-879d1816b8afc474.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-8a8e03ad7c39a076.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-8b2a4a4a8f9f903d.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-8fa7cf017935bb24.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-8fd7d4afcdb4ded6.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-9023e89f9153ac9f.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-907b516bc9297e0f.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-920ad471c37df1a4.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-92434aa1e0b7f60b.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-92b05bc39a4a2b76.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-9372cd37ee5f7252.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-93e5ce0d4e66ad57.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-976777e09b7b41e3.txt",
+      "size_bytes": 392,
+      "sha256": "4336969a9fe1bdaf92a10c769967152fabb16ff3be678ca4c95d92cdd924991b"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-988ad41488dbb1a8.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-9bd6cafdad8f73a9.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-9ebcd54ac364774c.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-9ef1988de78bf66c.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-a47da02c06c87b17.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-a4f926f97c2afff1.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-a52409b4690733cb.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-a87863e48ab52981.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-a9a387f286edc85a.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-ab14cde21ce14f50.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-ad513dee42684654.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-ad82dec044beecac.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-aeb5f35186bae193.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-b0b72baeb8371cdb.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-b0edb1c4db8d17f2.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-b3334e8831adfb11.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-b4161055fad8c37a.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-b42090a3701b33c8.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-b6257037f3961822.txt",
+      "size_bytes": 392,
+      "sha256": "0404e5d193379deaec6a3052e6b374259b34d35e2aec9632d6bf2053cb6d16d7"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-ba0e6b96ba147722.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-ba99c6893a63b321.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-c186d184bd475641.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-c2aea200ff244a20.txt",
+      "size_bytes": 392,
+      "sha256": "5fa679519c69d6625e8e9a7e9dffeb4957f8145aff68fb2fdf906674a42591aa"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-c2c1891bdff55c34.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-c3b4845e64897a54.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-c77994b555e8f2f7.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-c823561d270e0d76.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-c82ebb079ada6ee8.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-cd18889da97edfab.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-d8013d0a22c9b9ef.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-db258de2fb1a00c3.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-ddfd0c54ba70735e.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-dfa02cdae59321fc.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-e143935ca2f5f77f.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-e1c6eedc5191f352.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-e21c0851dcc91437.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-e52a7e2789cdf9b7.txt",
+      "size_bytes": 392,
+      "sha256": "2c28a174ad735e06b37690e6e5b7c3805b89ec94cbfcf2487e877f62996a1d1c"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-e85a025b09deb971.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-eb00807dc759ac46.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-ecb3d6235ed8ad47.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-edd4639ddd9db42b.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-f2e8a0b2a08237e3.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-f3353061df971738.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-f6a138551cbdb82f.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-f6fada3839111601.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-fdcccba00945815e.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-fe5c5a6c668162fc.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    },
+    {
+      "path": "sandbox/typical_v2/mechanism_gate/t-fecba7e1d4e1e316.txt",
+      "size_bytes": 48,
+      "sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd"
+    }
+  ],
+  "historical_crosscheck": {
+    "mapping_source": "configs/mechanism_gate_e1_v1_assignment_key.csv",
+    "historical_schedule": "configs/mechanism_gate_v2.1.csv",
+    "historical_log": "logs/mechanism_gate_v2.1_20261008T024641Z.jsonl",
+    "mapped_path_count": 40,
+    "mapped_existing_postwrite_files": 39,
+    "mapped_missing_paths": 1,
+    "mapped_existing_content_sha256_counts": {
+      "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd": 39
+    },
+    "fixture_remote_summary_sha256": "425bd8405fd8f2337a0efe0804d7547485c2f14c0a4381fd939b08c985b44efd",
+    "historical_asr_successes_by_model": {
+      "primary": 19,
+      "secondary": 20
+    },
+    "unique_missing_slot": {
+      "slot_id": "t-e21eb44e5f90f755",
+      "historical_trial_id": "t-8e29486ed094b497",
+      "model": "primary",
+      "cell": "C",
+      "user_condition": "user_silence",
+      "asr_success": false,
+      "mcp_call_count": 0
+    },
+    "interpretation": "Current sandbox files are post-write artifacts. This cross-check is forensic only and is not used as E1 prestate input."
+  }
+}

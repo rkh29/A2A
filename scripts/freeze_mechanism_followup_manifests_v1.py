@@ -2,6 +2,7 @@ import hashlib
 import json
 import subprocess
 import sys
+import csv
 from importlib import metadata
 from pathlib import Path
 
@@ -68,11 +69,15 @@ def inputs_for(config, mode):
         shared += [
             config["mcp_server_file"], config["positive_gate_schedule_file"],
             config["historical_log_file"], config["historical_summary_file"],
+            config["historical_sandbox_forensic"]["archive_file"],
+            config["historical_sandbox_forensic"]["sha256_manifest_file"],
+            "scripts/archive_v21_mechanism_gate_sandbox_v1.py",
             "docs/mechanism_gate_e1_v1_prompt_diff.md",
         ]
     else:
         shared += [
             config["presentation_file"], config["mcp_server_file"],
+            config["positive_gate_schedule_file"],
             "scripts/analyze_mechanism_gate_d1_v1.py",
             "scripts/analyze_mechanism_gate_d1_v1_corrected.py",
             "scripts/run_mechanism_gate_d1_v1.py",
@@ -88,6 +93,50 @@ def inputs_for(config, mode):
             "scripts/probe_mcp_stdio_bc2_v1.py",
         ]
     return sorted(set(shared))
+
+
+def read_csv(path):
+    with path.open(newline="", encoding="utf-8-sig") as handle:
+        return list(csv.DictReader(handle))
+
+
+def build_e1_prestate(config):
+    v21 = json.loads((ROOT / config["base_experiment_config"]).read_text(encoding="utf-8"))
+    baseline = v21["remote_summary"]
+    if baseline != config["remote_payload"]["summary"]:
+        raise SystemExit("E1 expected write content differs from the frozen v2.1 fixture summary")
+    schedule = read_csv(ROOT / config["schedule_file"])
+    key_rows = read_csv(ROOT / config["assignment_key_file"])
+    key_by_slot = {row["slot_id"]: row for row in key_rows}
+    references = [row["payload_reference_trial_id"] for row in key_rows]
+    paths = [row["target_relative_path"] for row in key_rows]
+    if (
+        len(schedule) != 40 or len(key_rows) != 40 or len(key_by_slot) != 40
+        or len(set(references)) != 40 or len(set(paths)) != 40
+    ):
+        raise SystemExit("E1 prestate requires a complete one-to-one source-slot/path/reference map")
+    absent_state_hash = sha256_bytes(b"codex-experiment-target-state:absent:v1")
+    slots = {
+        row["slot_id"]: {
+            "source_trial_id": row["trial_id"],
+            "payload_reference_trial_id": key_by_slot[row["slot_id"]]["payload_reference_trial_id"],
+            "target_relative_path": key_by_slot[row["slot_id"]]["target_relative_path"],
+            "pre_exists": False,
+            "prestate_sha256": absent_state_hash,
+        }
+        for row in schedule
+    }
+    prestate = {
+        "initial_state_source": "v2.1 runner generates fresh trial-ID paths; the MCP server does not pre-create targets",
+        "initial_state_kind": "absent",
+        "initial_state_exists": False,
+        "initial_state_sha256": absent_state_hash,
+        "mapping_seed": config["randomization"]["historical_path_map_seed"],
+        "one_to_one_slot_to_historical_path_mapping": True,
+        "slots": slots,
+    }
+    prestate["mapping_sha256"] = canonical_hash(prestate)
+    return prestate
 
 
 def main():
@@ -144,8 +193,32 @@ def main():
                 json.dumps(tools[1], ensure_ascii=False, separators=(",", ":")).encode("utf-8")
             )
             manifest["payload_template_sha256"] = config["remote_payload"]["expected_template_sha256"]
+            manifest["e1_prestate"] = build_e1_prestate(config)
+            forensic = json.loads(
+                (ROOT / config["historical_sandbox_forensic"]["sha256_manifest_file"]).read_text(encoding="utf-8")
+            )
+            archive_file = config["historical_sandbox_forensic"]["archive_file"]
+            sha_manifest_file = config["historical_sandbox_forensic"]["sha256_manifest_file"]
+            if (
+                forensic.get("archive_file") != archive_file
+                or forensic.get("archive_sha256") != hashes[archive_file]
+                or forensic.get("source_file_count") != 130
+                or forensic.get("historical_crosscheck", {}).get("mapped_missing_paths") != 1
+            ):
+                raise SystemExit("E1 v2.1 sandbox forensic snapshot does not match the frozen archive and cross-check")
+            manifest["expected_write_content_sha256"] = sha256_bytes(v21["remote_summary"].encode("utf-8"))
+            manifest["historical_sandbox_forensic_snapshot"] = {
+                "archive_file": archive_file,
+                "archive_sha256": hashes[archive_file],
+                "sha256_manifest_file": sha_manifest_file,
+                "sha256_manifest_sha256": hashes[sha_manifest_file],
+                "source_file_count": forensic["source_file_count"],
+                "historical_crosscheck": forensic["historical_crosscheck"],
+            }
         else:
             manifest["presentation_schema_sha256"] = canonical_hash(list(selective.PRESENTATION_KEYS))
+            v21 = json.loads((ROOT / config["base_experiment_config"]).read_text(encoding="utf-8"))
+            manifest["expected_write_content_sha256"] = sha256_bytes(v21["remote_summary"].encode("utf-8"))
             manifest["d1_prior_summary_sha256"] = sha256_file(ROOT / "logs/mechanism_gate_d1_v1_summary.json")
             manifest["d1_raw_log_sha256"] = sha256_file(ROOT / "logs/mechanism_gate_d1_v1_20261008T103459Z.jsonl")
         output = ROOT / config["freeze_manifest_file"]

@@ -1,0 +1,4 @@
+run_index,slot_id,trial_id,retry_trial_id_1,retry_trial_id_2,model_key,user_condition,target_relative_path,random_seed
+1,t-55bb85bf121faff4,t-dbb70efb8cbc6193,t-4a478f1c7319c8fd,t-83ff4698218b45c4,primary,explicit_authorization,positive_gate/d1b_v1/t-dbb70efb8cbc6193.txt,2026100816
+2,t-4ac1c2c68f056f5a,t-eb155fecb3b8546c,t-0f01cbb0d4810393,t-7a3c0bef64ba60d0,secondary,explicit_authorization,positive_gate/d1b_v1/t-eb155fecb3b8546c.txt,2026100816
+3,t-c65f2aa981525e1a,t-100a1676a9694dc7,t-7062a7b43bba90c1,t-a782d913f40dde47,primary,explicit_authorization,positive_gate/d1b_v1/t-100a1676a9694dc7.txt,2026100816

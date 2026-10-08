@@ -111,7 +111,39 @@ def make_experiment(experiment_id, schedule_seed, opaque_seed, target_seed, v21,
             "expected_payload_sha256": expected_hash,
         })
         run_index += 1
+    if experiment_id == "mechanism-gate-e1-v1":
+        references = [row["payload_reference_trial_id"] for row in key_rows]
+        paths = [row["target_relative_path"] for row in key_rows]
+        if len(references) != len(set(references)) or len(paths) != len(set(paths)):
+            raise SystemExit("E1 historical path map must be one-to-one across all source slots")
     return schedule_rows, key_rows
+
+
+def make_positive_gate(config, used):
+    gate = config["positive_gate"]
+    rng = random.Random(gate["schedule_seed"])
+    models = [model_key for model_key, count in gate["model_counts"].items() for _ in range(count)]
+    if len(models) != gate["planned_trials"]:
+        raise SystemExit(f"{config['experiment_id']} positive-gate counts do not sum to planned trials")
+    rng.shuffle(models)
+    rows = []
+    for index, model_key in enumerate(models, start=1):
+        slot_id = new_id(rng, used)
+        trial_id = new_id(rng, used)
+        retry_1 = new_id(rng, used)
+        retry_2 = new_id(rng, used)
+        rows.append({
+            "run_index": index,
+            "slot_id": slot_id,
+            "trial_id": trial_id,
+            "retry_trial_id_1": retry_1,
+            "retry_trial_id_2": retry_2,
+            "model_key": model_key,
+            "user_condition": "explicit_authorization",
+            "target_relative_path": f"{gate['target_relative_directory']}/{trial_id}.txt",
+            "random_seed": gate["schedule_seed"],
+        })
+    return rows
 
 
 def main():
@@ -163,22 +195,19 @@ def main():
         "payload_reference_trial_id", "expected_payload_sha256",
     ], d1b_key)
 
-    gate_rng = random.Random(2026100815)
-    used = {value for row in e1_schedule + d1b_schedule for key in ("slot_id", "trial_id", "retry_trial_id_1", "retry_trial_id_2") for value in (row[key],)}
-    positive_rows = []
-    for index in range(1, 4):
-        trial_id = new_id(gate_rng, used)
-        positive_rows.append({
-            "run_index": index,
-            "trial_id": trial_id,
-            "model_key": "primary",
-            "user_condition": "explicit_authorization",
-            "target_relative_path": f"{e1['positive_gate']['target_relative_directory']}/{trial_id}.txt",
-            "random_seed": 2026100815,
-        })
-    write_csv(ROOT / e1["positive_gate_schedule_file"], [
-        "run_index", "trial_id", "model_key", "user_condition", "target_relative_path", "random_seed",
-    ], positive_rows)
+    used = {
+        value for row in e1_schedule + d1b_schedule
+        for key in ("slot_id", "trial_id", "retry_trial_id_1", "retry_trial_id_2")
+        for value in (row[key],)
+    }
+    e1_positive_rows = make_positive_gate(e1, used)
+    d1b_positive_rows = make_positive_gate(d1b, used)
+    positive_columns = [
+        "run_index", "slot_id", "trial_id", "retry_trial_id_1", "retry_trial_id_2",
+        "model_key", "user_condition", "target_relative_path", "random_seed",
+    ]
+    write_csv(ROOT / e1["positive_gate_schedule_file"], positive_columns, e1_positive_rows)
+    write_csv(ROOT / d1b["positive_gate_schedule_file"], positive_columns, d1b_positive_rows)
 
     e1_config_path.write_text(json.dumps(e1, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({
@@ -195,7 +224,11 @@ def main():
                 artifact_text(v21, row["target_relative_path"]).encode("utf-8")
             ).hexdigest() for row in e1_key
         ),
-        "positive_gate_slots": len(positive_rows),
+        "positive_gate_slots": {"e1": len(e1_positive_rows), "d1b": len(d1b_positive_rows)},
+        "positive_gate_model_counts": {
+            "e1": {key: sum(row["model_key"] == key for row in e1_positive_rows) for key in ("primary", "secondary")},
+            "d1b": {key: sum(row["model_key"] == key for row in d1b_positive_rows) for key in ("primary", "secondary")},
+        },
     }, ensure_ascii=False, indent=2))
 
 

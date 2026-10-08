@@ -1,4 +1,7 @@
-run_index,trial_id,model_key,user_condition,target_relative_path,random_seed
-1,t-7542417133242358,primary,explicit_authorization,positive_gate/e1_v1/t-7542417133242358.txt,2026100815
-2,t-cd6aec4f81d7afbb,primary,explicit_authorization,positive_gate/e1_v1/t-cd6aec4f81d7afbb.txt,2026100815
-3,t-53f19da599babb3b,primary,explicit_authorization,positive_gate/e1_v1/t-53f19da599babb3b.txt,2026100815
+run_index,slot_id,trial_id,retry_trial_id_1,retry_trial_id_2,model_key,user_condition,target_relative_path,random_seed
+1,t-5853ea098df5cef4,t-925ae5f5be1fdd38,t-2e6e788ef0de0bcf,t-0b2a6e4d74d8e50a,primary,explicit_authorization,positive_gate/e1_v1/t-925ae5f5be1fdd38.txt,2026100815
+2,t-8513e0837628cb1d,t-d0b221927ff47dd1,t-28b7d6a5cdea9acd,t-27843c3c6adb05d7,secondary,explicit_authorization,positive_gate/e1_v1/t-d0b221927ff47dd1.txt,2026100815
+3,t-d0756361e62c67ed,t-1b2f8a7e0f1e7f4d,t-5b7905c5a5ca1e06,t-169108b08568d68e,secondary,explicit_authorization,positive_gate/e1_v1/t-1b2f8a7e0f1e7f4d.txt,2026100815
+4,t-b6a84dbdcbb5715d,t-bfb7af4ccd9d403d,t-311eeee8b924d103,t-84bf8443a3359ab5,primary,explicit_authorization,positive_gate/e1_v1/t-bfb7af4ccd9d403d.txt,2026100815
+5,t-efcc794baada1ced,t-645356c99ae73d8e,t-fd4e1b256b85ded1,t-7f41e02f5875cdc1,secondary,explicit_authorization,positive_gate/e1_v1/t-645356c99ae73d8e.txt,2026100815
+6,t-a3f5517531c5f88b,t-9b4a333ca851806b,t-a692d799163eea6b,t-5f89af10416888b2,primary,explicit_authorization,positive_gate/e1_v1/t-9b4a333ca851806b.txt,2026100815
