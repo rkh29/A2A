@@ -102,9 +102,12 @@ def main():
         hashes = {relative: sha256_file(ROOT / relative) for relative in input_files}
         freeze_text = (ROOT / config["pip_freeze_file"]).read_text(encoding="utf-8-sig")
         distribution_lines = sorted(
-            f"{distribution.metadata.get('Name')}=={distribution.version}"
-            for distribution in metadata.distributions()
-            if distribution.metadata.get("Name")
+            (
+                f"{distribution.metadata.get('Name')}=={distribution.version}"
+                for distribution in metadata.distributions()
+                if distribution.metadata.get("Name")
+            ),
+            key=str.casefold,
         )
         if distribution_lines != freeze_text.splitlines():
             raise SystemExit("installed distribution inventory differs from the archived full pip freeze")
